@@ -2,10 +2,15 @@ from django.test import TestCase
 from rest_framework.test import APIClient
 from rest_framework import status
 from .models import Exercise
+from rest_framework.authtoken.models import Token
+from django.contrib.auth.models import User
 
 class TestExerciseViews(TestCase):
     def setUp(self):
         self.client = APIClient()
+        self.user = User.objects.create_user(username='testuser', password='testpassword')
+        self.token = Token.objects.create(user=self.user)
+        self.client.credentials(HTTP_AUTHORIZATION=f'Token {self.token.key}')
 
     def create_test_data(self, name):
         return {

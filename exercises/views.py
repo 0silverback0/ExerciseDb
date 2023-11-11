@@ -8,15 +8,19 @@ from .serializers import ExerciseSerializer
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from .permissions import IsSuperuserOrReadOnly
+from rest_framework.permissions import IsAuthenticated
 
 class CreateExerciseView(generics.CreateAPIView):
     queryset = Exercise.objects.all()
-    serializer_class = ExerciseSerializer
+    serializer_class = ExerciseSerializer 
+    permission_classes = [IsAuthenticated]
 
 class ExerciseDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Exercise.objects.all()
     serializer_class = ExerciseSerializer
-
+    permission_classes = [IsSuperuserOrReadOnly]
+    
 class ExerciseList(generics.ListAPIView):
     queryset = Exercise.objects.all()
     serializer_class = ExerciseSerializer
@@ -28,7 +32,6 @@ class FindExerciseByFieldView(APIView):
             field_map = {
                 'name': 'name__icontains',
                 'primary_muscle': 'primary_muscle__icontains',
-                # Add more fields as needed
             }
             
             field_lookup = field_map.get(field_name)

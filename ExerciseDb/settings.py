@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'exercises',
-    'rest_framework'
+    'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -136,8 +137,10 @@ CACHES = {
     }
 }
 
-# settings.py
+
 REST_FRAMEWORK = {
-    # ...
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    ),
     'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60 * 15,  # Cache responses for 15 minutes
 }
