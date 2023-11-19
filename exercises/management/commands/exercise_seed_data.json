@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Single Arm Flye",
+    "primary_muscle": "chest",
+    "exercise_type": "Strength",
+    "other_names": "One-Arm Flye, Unilateral Chest Flye",
+    "image_url": "https://example.com/single_arm_flye_image.jpg",
+    "video_url": "Lie on a bench with a dumbbell in one hand. Extend your arm upward, then lower the dumbbell out to the side, keeping a slight bend in your elbow. Return to the starting position by bringing the dumbbell back up above your chest. Repeat on the other arm.",
+    "instructions": "Dumbbell, Bench",
+    "equipment": "https://example.com/single_arm_flye_video.mp4"
+  },
+  {
+    "name": "Incline Push-Up",
+    "primary_muscle": "chest",
+    "exercise_type": "Strength",
+    "other_names": "Incline Pushup",
+    "image_url": "https://example.com/incline_push_up_image.jpg",
+    "video_url": "Perform a push-up with your hands elevated on an incline surface. Keep your body straight and lower your chest towards the incline, then push back up.",
+    "instructions": "Incline Surface",
+    "equipment": "https://example.com/incline_push_up_video.mp4"
+  },
+  {
+    "name": "Weighted Push-Up",
+    "primary_muscle": "chest",
+    "exercise_type": "Strength",
+    "other_names": "Weighted Pushup",
+    "image_url": "https://example.com/weighted_push_up_image.jpg",
+    "video_url": "Perform a push-up with additional weight on your back. Ensure proper form and control throughout the movement.",
+    "instructions": "Weight Plate, Weight Vest",
+    "equipment": "https://example.com/weighted_push_up_video.mp4"
+  },
+  {
+    "name": "Modified Push-Up",
+    "primary_muscle": "chest",
+    "exercise_type": "Strength",
+    "other_names": "Knee Push-Up, Girl Push-Up",
+    "image_url": "https://example.com/modified_push_up_image.jpg",
+    "video_url": "Perform a push-up with your knees on the ground. Keep your body straight and lower your chest towards the ground, then push back up.",
+    "instructions": "None",
+    "equipment": "https://example.com/modified_push_up_video.mp4"
+  },
+  {
+    "name": "Single Arm Push-Up",
+    "primary_muscle": "chest",
+    "exercise_type": "Strength",
+    "other_names": "One-Arm Pushup",
+    "image_url": "https://example.com/single_arm_push_up_image.jpg",
+    "video_url": "Perform a push-up with one arm while stabilizing your body. Ensure proper form and control throughout the movement.",
+    "instructions": "None",
+    "equipment": "https://example.com/single_arm_push_up_video.mp4"
+  },
+  {
+    "name": "Dumbbell Bench Press",
+    "primary_muscle": "chest",
+    "exercise_type": "Strength",
+    "other_names": "Dumbbell Press",
+    "image_url": "https://example.com/dumbbell_bench_press_image.jpg",
+    "video_url": "Lie on a bench with a dumbbell in each hand. Press the dumbbells upward until your arms are fully extended, then lower them back down to the sides of your chest.",
+    "instructions": "Dumbbells, Bench",
+    "equipment": "https://example.com/dumbbell_bench_press_video.mp4"
+  },
+  {
+    "name": "Incline Dumbbell Bench Press",
+    "primary_muscle": "chest",
+    "exercise_type": "Strength",
+    "other_names": "Incline Dumbbell Press",
+    "image_url": "https://example.com/incline_dumbbell_bench_press_image.jpg",
+    "video_url": "Lie on an incline bench with a dumbbell in each hand. Press the dumbbells upward at an angle, then lower them back down to the sides of your chest.",
+    "instructions": "Dumbbells, Incline Bench",
+    "equipment": "https://example.com/incline_dumbbell_bench_press_video.mp4"
+  },
+  {
+    "name": "Decline Dumbbell Bench Press",
+    "primary_muscle": "chest",
+    "exercise_type": "Strength",
+    "other_names": "Decline Dumbbell Press",
+    "image_url": "https://example.com/decline_dumbbell_bench_press_image.jpg",
+    "video_url": "Lie on a decline bench with a dumbbell in each hand. Press the dumbbells upward at a downward angle, then lower them back down to the sides of your chest.",
+    "instructions": "Dumbbells, Decline Bench",
+    "equipment": "https://example.com/decline_dumbbell_bench_press_video.mp4"
+  },
+  {
+    "name": "Alternating Dumbbell Bench Press",
+    "primary_muscle": "chest",
+    "exercise_type": "Strength",
+    "other_names": "Single Arm Dumbbell Press",
+    "image_url": "https://example.com/alternating_dumbbell_bench_press_image.jpg",
+    "video_url": "Lie on a bench with a dumbbell in each hand. Press one dumbbell upward while the other stays at the bottom. Alternate sides with each repetition.",
+    "instructions": "Dumbbells, Bench",
+    "equipment": "https://example.com/alternating_dumbbell_bench_press_video.mp4"
+  },
+  {
+    "name": "Barbell Bench Press",
+    "primary_muscle": "chest",
+    "exercise_type": "Strength",
+    "other_names": "Bench Press",
+    "image_url": "https://example.com/barbell_bench_press_image.jpg",
+    "video_url": "Lie on a bench with a barbell. Press the barbell upward until your arms are fully extended, then lower it back down to the chest.",
+    "instructions": "Barbell, Bench",
+    "equipment": "https://example.com/barbell_bench_press_video.mp4"
+  },
+  {
+    "name": "Barbell Incline Bench Press",
+    "primary_muscle": "chest",
+    "exercise_type": "Strength",
+    "other_names": "Incline Bench Press",
+    "image_url": "https://example.com/barbell_incline_bench_press_image.jpg",
+    "video_url": "Lie on an incline bench with a barbell. Press the barbell upward at an angle, then lower it back down to the chest.",
+    "instructions": "Barbell, Incline Bench",
+    "equipment": "https://example.com/barbell_incline_bench_press_video.mp4"
+  }
+]
