@@ -5,7 +5,7 @@ from .models import Exercise
 PRIMARY_MUSCLE_CHOICES = [
     ('chest', 'Chest'),
     ('back', 'Back'),
-    ('legs', 'Legs'),
+    ('quadriceps', 'Quads'),
     ('shoulders', 'Shoulders'),
     ('arms', 'Arms'),
     ('abs', 'Abs'),
