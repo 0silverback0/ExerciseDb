@@ -108,5 +108,15 @@
     "video_url": "Lie on an incline bench with a barbell. Press the barbell upward at an angle, then lower it back down to the chest.",
     "instructions": "Barbell, Incline Bench",
     "equipment": "https://example.com/barbell_incline_bench_press_video.mp4"
+  },
+  {
+    "name": "Squat",
+    "primary_muscle": "quadriceps",
+    "exercise_type": "Strength",
+    "other_names": "Bodyweight Squat",
+    "image_url": "https://example.com/squat_image.jpg",
+    "video_url": "Stand with your feet shoulder-width apart. Lower your body by bending your knees and hips, keeping your back straight. Go as low as your flexibility allows, then push through your heels to return to the starting position.",
+    "instructions": "None (Bodyweight), Barbell (Optional)",
+    "equipment": "https://example.com/squat_video.mp4"
   }
 ]
