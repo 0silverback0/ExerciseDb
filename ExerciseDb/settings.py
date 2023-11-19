@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-f11kd91zzt*i7y-m79@9&c$&y*!_=53_j*m$@skq=57n-!@xqs
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'marz.pythonanywhere.com'
+    'marz.pythonanywhere.com',
+    '127.0.0.1',
+    'localhost',
 ]
 
 
@@ -85,7 +87,7 @@ DATABASES = {
      },
      'test': {
         'ENGINE': 'django.db.backends.sqlite3',
-         'NAME': BASE_DIR / 'test_db.sqlite3',  # Path to your test database
+         'NAME': BASE_DIR / 'test_db.sqlite3',  
     },
 }
 
