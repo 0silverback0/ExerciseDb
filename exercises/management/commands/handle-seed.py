@@ -13,6 +13,15 @@ class Command(BaseCommand):
             exercise_data = json.load(file)
 
         for data in exercise_data:
-            Exercise.objects.create(**data)
+            name = data.get('name')
+            # Check if exercise with the same name already exists
+            existing_exercise = Exercise.objects.filter(name=name).first()
 
-        self.stdout.write(self.style.SUCCESS('Exercise data successfully seeded'))
+            if not existing_exercise:
+                # Exercise does not exist, create it
+                Exercise.objects.create(**data)
+                self.stdout.write(self.style.SUCCESS(f'Exercise "{name}" added to the database'))
+            else:
+                self.stdout.write(self.style.SUCCESS(f'Exercise "{name}" already exists in the database'))
+
+        self.stdout.write(self.style.SUCCESS('Exercise data seeding complete'))
