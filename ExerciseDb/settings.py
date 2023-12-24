@@ -35,6 +35,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5500",
     "http://localhost:5500",
     "http://localhost:3000",
+    "https://bucolic-jelly-e1e5fd.netlify.app",
 ]
 
 # Application definition
