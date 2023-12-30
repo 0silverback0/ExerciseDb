@@ -12,20 +12,27 @@ from rest_framework import filters
 from django.http import JsonResponse
 from django.views import View
 
+
+from .permissions import IsSuperUserOrReadOnly
+
 class CreateArticleView(generics.CreateAPIView):
     queryset = Article.objects.all()
-    serializer_class = ArticleSerializer 
+    serializer_class = ArticleSerializer
+    permission_classes = [IsSuperUserOrReadOnly]
 
 class ArticleListView(generics.ListAPIView):
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
+    permission_classes = [IsSuperUserOrReadOnly]
 
 class ArticleUpdateAPIView(generics.UpdateAPIView):
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
-    
+    permission_classes = [IsSuperUserOrReadOnly]
 
 class ArticleDetailView(APIView):
+    permission_classes = [IsSuperUserOrReadOnly]
+
     def get(self, request, id, format=None):
         try:
             article = Article.objects.get(id=id)
@@ -35,6 +42,8 @@ class ArticleDetailView(APIView):
             return Response({'error': 'Article not found'}, status=status.HTTP_404_NOT_FOUND)
         
 class SearchArticlesView(View):
+    permission_classes = [IsSuperUserOrReadOnly]
+
     def get(self, request):
         # Get the search term from the query parameters
         search_term = request.GET.get('title', '')
