@@ -12,5 +12,5 @@ class Article(models.Model):
     text = models.TextField()
     image = models.TextField(default='https://via.placeholder.com/800x400')
     top_article = models.BooleanField(default=False)
-    category = models.TextField(default='general')
+    category = models.TextField(default='training')
     description = models.TextField(100)
