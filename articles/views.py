@@ -61,3 +61,8 @@ class SearchArticlesView(View):
         else:
             # Return an empty list if no articles match the search term
             return JsonResponse({'articles': []})
+
+class ArticleDeleteAPIView(generics.DestroyAPIView):
+    queryset = Article.objects.all()
+    serializer_class = ArticleSerializer
+    permission_classes = [IsSuperUserOrReadOnly]
