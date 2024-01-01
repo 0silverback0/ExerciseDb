@@ -27,6 +27,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'marz.pythonanywhere.com',
+    'apexmindapexbody.com',
     '127.0.0.1',
     'localhost',
 ]
