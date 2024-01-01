@@ -27,7 +27,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'marz.pythonanywhere.com',
-    'apexmindapexbody.com',
     '127.0.0.1',
     'localhost',
 ]
@@ -37,6 +36,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5500",
     "http://localhost:3000",
     "https://bucolic-jelly-e1e5fd.netlify.app",
+    "apexmindapexbody.com",
 ]
 
 # Application definition
