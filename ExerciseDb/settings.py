@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-import os 
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -36,6 +36,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5500",
     "http://localhost:3000",
     "https://bucolic-jelly-e1e5fd.netlify.app",
+    "https://apexmindapexbody.com",
 ]
 
 # Application definition
@@ -95,7 +96,7 @@ DATABASES = {
      },
      'test': {
         'ENGINE': 'django.db.backends.sqlite3',
-         'NAME': BASE_DIR / 'test_db.sqlite3',  
+         'NAME': BASE_DIR / 'test_db.sqlite3',
     },
 }
 

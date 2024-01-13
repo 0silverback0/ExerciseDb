@@ -10,7 +10,7 @@ class Article(models.Model):
     title = models.CharField(max_length=100, unique=True)
     date = models.DateField(default=get_current_date, editable=False)
     text = models.TextField()
-    image = models.TextField(default='https://via.placeholder.com/800x400')
+    image = models.TextField(default='images/Rubik-Distressed-_1_.webp')
     top_article = models.BooleanField(default=False)
     category = models.TextField(default='training')
     description = models.TextField(100)
