@@ -36,7 +36,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5500",
     "http://localhost:3000",
     "https://bucolic-jelly-e1e5fd.netlify.app",
-    "https://apexmindapexbody.com",
+    "https://apexmindapexbody.com"
 ]
 
 # Application definition
